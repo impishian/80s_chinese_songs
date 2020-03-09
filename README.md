@@ -1,4 +1,4 @@
-# 80s_chinese_songs
+# 1980s chinese songs
 
 1980年代中国大陆影视流行歌曲
 
