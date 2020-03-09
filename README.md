@@ -38,8 +38,10 @@ fanhongtao 的 https://github.com/fanhongtao/jianpu  里面的 jianpy.ly 是 Pau
 
 3. 可写一个名为 lily 的 shell 脚本快速运行 docker 容器的 lilypond 
 
-    $ cat /usr/local/bin/lily
-    #!/bin/bash
-    /usr/local/bin/docker run --rm -v "$(pwd):/root" asbjoree/lilypond lilypond "$@"
+>    $ cat /usr/local/bin/lily
+>    
+>    #!/bin/bash
+>
+>    /usr/local/bin/docker run --rm -v "$(pwd):/root" asbjoree/lilypond lilypond "$@"
 
    使用方法：(1) 【编辑】 hello.ly 文件 (2) 【转换】命令行下运行：lily hello.ly  (3) 【查看】命令行下运行：open hello.pdf 
