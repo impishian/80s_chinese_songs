@@ -32,7 +32,7 @@ fanhongtao 的 https://github.com/fanhongtao/jianpu  里面的 jianpy.ly 是 Pau
 
     https://hub.docker.com/r/asbjoree/lilypond
 
-    $ docker pull asbjoree/lilypond
+>    $ docker pull asbjoree/lilypond
 
 2. 这个 docker 镜像里的 lilypond 缺简体字体，也缺少量繁体字。排歌词时，尽量用繁体字或少量代替字。
 
