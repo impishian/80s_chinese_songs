@@ -14,7 +14,7 @@ lilypond 本来只能排五线谱，但是通过 Lisp 方言之一的 scheme 语
 
 Silas S. Brown是最早提供简谱扩展实现的。但生成的简谱有些问题（比如，https://ssb22.user.srcf.net/mwrhome/jianpu-ly.html 右上角效果图的 3 5 下面的双横线显示位置不对）。
 
-Paul Morris  http://lilypond.1069038.n5.nabble.com/Jianpu-Notation-tp174685p175857.html ， 是另一个比较好的简谱扩展实现。此仓库里的 jianpy.ly 就是 Paul Morris 的版本，尽管该版本还有些小bug (比如，高音和低音的圆点，显示还不够完美)，但已是现在 lilypond 排简谱的最佳实现。
+Paul Morris 和 David Zhang 等人的 http://lilypond.1069038.n5.nabble.com/Jianpu-Notation-tp174685p175857.html ，是另一个比较好的简谱扩展实现。此仓库里的 jianpy.ly 就是他们的版本(jianpu10a.ly)，尽管该版本还有些小bug (比如，高音和低音的圆点，显示还不够完美)，但已是现在 lilypond 排简谱的最佳实现。
 
 
 ### 快速排 lilypond 音名
@@ -44,4 +44,4 @@ Paul Morris  http://lilypond.1069038.n5.nabble.com/Jianpu-Notation-tp174685p1758
 >
 >    /usr/local/bin/docker run --rm -v "$(pwd):/root" asbjoree/lilypond lilypond "$@"
 
-   使用方法：(1) 【编辑】 hello.ly 文件 (2) 【转换】命令行下运行：lily hello.ly  (3) 【查看】命令行下运行：open hello.pdf 
+   使用方法：(1)【编辑】 hello.ly 文件 (2)【转换】命令行下运行：lily hello.ly  (3)【查看】命令行下运行：open hello.pdf 
