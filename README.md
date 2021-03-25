@@ -30,15 +30,13 @@ Paul Morris 和 David Zhang 等人的 http://lilypond.1069038.n5.nabble.com/Jian
 
 1. Frescobaldi (lilypond) 在 macOS Big Sur 下暂无可用的版本，只好采用 docker 运行 lilypond。要先装 docker，
 
-2. 执行命令行，自己构建 docker 镜像:
+2. 运行以下命令，自己构建 docker 镜像 （不再使用 https://hub.docker.com/r/asbjoree/lilypond 这个镜像。因为太大了，大概 1.8GB，自己构建的镜像大概 200MB）
 
    docker build -t 80s_chinese_songs_lilypond:1.0 .
+   
+3. 编写名为 lily 的 shell 脚本
 
-   不再使用 https://hub.docker.com/r/asbjoree/lilypond 这个镜像。因为太大了，大概 1.8GB，自己构建的镜像大概 200MB。
-
-3. 写一个名为 lily 的 shell 脚本
-
->  $ vim usr/local/bin/lily
+>  $ vim /usr/local/bin/lily
 >    
 >    #!/bin/bash
 >
@@ -46,4 +44,4 @@ Paul Morris 和 David Zhang 等人的 http://lilypond.1069038.n5.nabble.com/Jian
 >
 >  $ chmod +x /usr/local/bin/lily
 
-   使用方法：(1) vim hello.ly  (2)  lily hello.ly  (3) open hello.pdf 
+4. 使用方法：(1) vim hello.ly  (2)  lily hello.ly  (3) open hello.pdf 
