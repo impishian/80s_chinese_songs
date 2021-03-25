@@ -45,8 +45,8 @@ sk = \skip1
 verse = \lyricmode {
    %hun shui bai nian \sk guo ren jian yi xing 
    \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk \sk
-   莫 説 青 山 多 障 礙 \sk \sk 風 也 急 風 也 勁 \sk \sk 白 雲 \sk 過 山 峰 也 可 傳 情 \sk \sk \sk \sk \sk 
-   莫 説 水 中 多 變 幻 \sk \sk 水 也 清 水 也 靜 \sk \sk 柔 情 \sk 似 水 愛 共 永 \sk \sk \sk \sk \sk
+   莫 說 青 山 多 障 礙 \sk \sk 風 也 急 風 也 勁 \sk \sk 白 雲 \sk 過 山 峰 也 可 傳 情 \sk \sk \sk \sk \sk 
+   莫 說 水 中 多 變 幻 \sk \sk 水 也 清 水 也 靜 \sk \sk 柔 情 \sk 似 水 愛 共 永 \sk \sk \sk \sk \sk
    未 怕 罡 \sk \sk  風 吹 散 了 \sk \sk  熱 愛 \sk 萬 水 \sk \sk 千 山 總 是 情 \sk \sk
 }
 

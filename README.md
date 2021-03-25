@@ -26,22 +26,24 @@ Paul Morris 和 David Zhang 等人的 http://lilypond.1069038.n5.nabble.com/Jian
 本仓库里所有的歌曲的 melody 部分，都是用该工具，辅助生成复制出来再微调得到的。
 
 
-### Mac OS Catalina 通过 docker 镜像使用 Lilypond:
+### macOS Big Sur 通过 docker 使用 Lilypond:
 
-1. Frescobaldi (lilypond) 在 Mac OS Catalina 下暂无可用的版本，只好采用 docker 运行 lilypond。要先装 docker，再拉以下镜像:
+1. Frescobaldi (lilypond) 在 macOS Big Sur 下暂无可用的版本，只好采用 docker 运行 lilypond。要先装 docker，
 
-    https://hub.docker.com/r/asbjoree/lilypond
+2. 执行命令行，自己构建 docker 镜像:
 
->    $ docker pull asbjoree/lilypond
+   docker build -t 80s_chinese_songs_lilypond:1.0 .
 
-2. 这个 docker 镜像里的 lilypond 缺简体字体，也缺少量繁体字。排歌词时，尽量用繁体字或少量代替字。
+   不再使用 https://hub.docker.com/r/asbjoree/lilypond 这个镜像。因为太大了，大概 1.8GB，自己构建的镜像大概 200MB。
 
-3. 可写一个名为 lily 的 shell 脚本快速运行 docker 容器的 lilypond 
+3. 写一个名为 lily 的 shell 脚本
 
->    $ cat /usr/local/bin/lily
+>  $ vim usr/local/bin/lily
 >    
 >    #!/bin/bash
 >
->    /usr/local/bin/docker run --rm -v "$(pwd):/root" asbjoree/lilypond lilypond "$@"
+>    /usr/local/bin/docker run --rm -v $(pwd):/root -w /root 80s_chinese_songs_lilypond:1.0  lilypond "$@"
+>
+>  $ chmod +x /usr/local/bin/lily
 
-   使用方法：(1)【编辑】 hello.ly 文件 (2)【转换】命令行下运行：lily hello.ly  (3)【查看】命令行下运行：open hello.pdf 
+   使用方法：(1) vim hello.ly  (2)  lily hello.ly  (3) open hello.pdf 

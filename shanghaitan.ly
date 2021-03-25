@@ -63,7 +63,7 @@ verse = \lyricmode {
 似 大 江 一 發 不 收 \sk \sk 
 轉 千 灣 \sk \sk  轉 千 灘 \sk \sk 
 亦 未 平 復 此 中 爭 鬥 \sk \sk 又 有
-心 中 起 伏 苟
+心 中 起 伏 夠
 
   
    
